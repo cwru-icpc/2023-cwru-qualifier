@@ -169,7 +169,6 @@ int main() {
     for(int i = 15; i < 20; i++) {
         int id = randomInt(0, unrecorded.size() - 1);
         string s = unrecorded[id];
-        cout << i << " " << s << "\n";
         ofstream out(outfile(i));
         ofstream inp(infile(i));
         
