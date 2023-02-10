@@ -13,6 +13,14 @@ std::string formatNumber(int number, int buffer) {
     return ss.str();
 }
 
+std::string infile(int test_id) {
+    return "test/input/input" + formatNumber(test_id, 2) + ".txt";
+}
+
+std::string outfile(int test_id) {
+    return "test/output/output" + formatNumber(test_id, 2) + ".txt";
+}
+
 
 // Be careful with overflow :)
 int randomInt(int L, int R) {
