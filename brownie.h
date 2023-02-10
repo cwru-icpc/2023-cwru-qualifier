@@ -16,6 +16,9 @@ std::string formatNumber(int number, int buffer) {
 
 // Be careful with overflow :)
 int randomInt(int L, int R) {
+    if (L == R)
+        return L;
+
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937 gen (seed);
     int range = R - L + 1;
@@ -25,6 +28,9 @@ int randomInt(int L, int R) {
 
 // Be careful with overflow :)
 long randomLong(long L, long R) {
+    if (L == R)
+        return L;
+
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::mt19937_64 gen (seed);
     long range = R - L + 1;
