@@ -4,3 +4,10 @@
 *.zip
 
 .DS_Store
+
+# Latex Stuff
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz

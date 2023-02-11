@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{Attending Lectures}
+\author{Duc Huy Nguyen}
+\keywords{dp}
+\comments{vkl}
+\difficulty{5} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+    Alice is a very hard-working and passionate student at Case. Not only does she have a passion for attending classes on time without missing a single lecture, but she also tries to cramp as many classes in her schedule as possible (this is very NOT recommended, from experience). She enrolled in too many classes, that she just now realized all of them start at the same time in her schedule!
+
+Alice knows now that she cannot attend every single lecture, therefore she comes up with a solution. She calculates a special value $a_i$ for each class, called “attendance value”, which evaluates how attending the lectures can help her in class. The special property of this value is that it decreases as the classes go through. Therefore, the earlier she can attend a lecture, the more value she can get. Even worse, if she attends a class too late, it might even give her a negative value (from the professor remembering her being late every time, or attending the wrong session after the lecture has already ended). Precisely, given the degrading factor of $d_i$, then the class will have a new attendance value of $a_i - d_i \cdot x$ after $x$ seconds has passed.
+
+$x$ is determined by the time from the last class Alice just attended to the class.
+
+Alice is not only a hard-working student but also a quick learner. Therefore, just merely joining the class and leaving it immediately can already help Alice absorb all information from the lecture. She moves from lecture to lecture, running in vain of obtaining the most value in the university. Given that she runs in Manhattan distance at a rate of 1 unit per second, this will be a very tiring semester for her. Let’s help her find the best plan for the best value!
+
+Extra note: the Manhattan distance from two points $(a, b)$ to $(c, d)$ is $ \lvert a - c \rvert + \lvert b - d\rvert$.
+
+
+\end{problemDescription}
+
+\begin{inputDescription}
+
+    The first line contains an integer $n$ $(1 \leq n \leq 20)$, being the number of classes that she enrolled in.
+
+The next $n$ lines, each containing two pairs of integers $x_i, y_i, a_i, d_i$ $(1 \leq a_i, d_i \leq 10^6, 1 \leq x_i, y_i \leq 50)$, are the coordinates of the lecture room, the attendance value and the degrading factor of each class.
+
+\end{inputDescription}
+
+\begin{outputDescription}
+    A single integer denoting the maximum attendance value Alice can get.
+
+\end{outputDescription}
+
+\begin{sampleInput}
+3
+26 10 6 2
+25 5 7 4
+38 7 6 1
+\end{sampleInput}
+\begin{sampleOutput}
+64
+\end{sampleOutput}
+
+\end{document}

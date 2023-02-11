@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{Vending Machines}
+\author{Duc Huy Nguyen}
+\keywords{???}
+\comments{???}
+\difficulty{10} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+    On the CWRU campus, there are many vending machines located at critical locations. These locations can be as reasonable as next to the library or as unreasonable as hidden behind the entrance of the building. Nevertheless, these vending machines are located at almost every corner of the campus, helping hungry students to get a snack before class.
+
+Alice and Bob have a very interesting experiment. They notice how at some locations, it will be significantly harder to get to a vending machine than in others. To investigate this, they record their frequent locations and make some calculations with the Manhattan distance.
+
+The calculations are as follows: for each recorded pair of locations of Alice and Bob, they would like to know how many vending machines are closer to Alice than Bob, closer to Bob than Alice, and of equal distance. This data will be critical when they need to grab a snack, so please help them calculate this data!
+
+Extra note: the Manhattan distance from two points $(a, b)$ to $(c, d)$ is $ \lvert a - c \rvert + \lvert b - d\rvert$.
+
+
+\end{problemDescription}
+
+\begin{inputDescription}
+
+    The first line contains four integers, two integers $x_{\max}$ and $y_{\max}$ $(1 \leq x_{\max}, y_{\max} \leq 10^9)$ denoting the limit of the map, an integer $n$ $(1 \leq n \leq 10^5)$ denoting the number of vending machines and $m$ $(1 \leq m \leq 10^5)$ denoting the number of location records.
+
+    The next $n$ lines contain a pair of integers $a_i$, $b_i$ $(1 \leq a_i, b_i \leq 10^9)$, denoting the locations of the vending machines.
+    The next m lines contain two pairs of integers $x_{j1}, y_{j1}, x_{j2}, y_{j2}$ $(1 \leq x_{j1}, y_{j1} \leq x_{\max}, 1 \leq x_{j2}, y_{j2} \leq y_{\max})$, denoting the location of Alice and Bob respectively.
+    
+
+\end{inputDescription}
+
+\begin{outputDescription}
+The output consists of $m$ lines of three integers, denoting the number of vending machines which is closer to Alice, closer to Bob, and of equal distance.
+\end{outputDescription}
+
+\begin{sampleInput}
+19 12 8 1
+13 3
+9 11
+13 8
+7 7
+9 8
+10 4
+9 10
+8 7
+8 12 3 1
+\end{sampleInput}
+\begin{sampleOutput}
+6 1 1
+\end{sampleOutput}
+
+\end{document}

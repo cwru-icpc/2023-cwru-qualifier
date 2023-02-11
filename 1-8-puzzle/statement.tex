@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{1-8 Puzzle}
+\author{Duc Huy Nguyen}
+\keywords{graph}
+\comments{BFS}
+\difficulty{4} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+    The 1-8 puzzle has been a famous problem for many intro reinforcement learning class. However, we would like to solve it today and find the least number of moves.
+    To debrief on what is the 1-8 puzzle, the objective is to make the board into the 1-8 configuration.
+    
+    At each position, a move is defined as picking a cell on the board next to the empty cell and moving it to the empty cell.
+
+\end{problemDescription}
+
+\begin{inputDescription}
+
+    The input consists of three lines, each representing a row of cells with three number from $0$ to $8$, where $0$ denotes the empty cell. The input denotes the state of the 1-8 puzzle, which is guarantee to be a valid state that is either reachable or unreachable.
+
+\end{inputDescription}
+
+\begin{outputDescription}
+    The output is one integer that denotes the least number of moves needed to solve the 8-puzzle. If the puzzle is not solvable, return $-1$.
+\end{outputDescription}
+
+\begin{sampleInput}
+1 2 3
+4 5 6
+7 8 0
+----
+1 2 3
+4 5 6
+7 0 8
+\end{sampleInput}
+\begin{sampleOutput}
+0
+----
+1
+\end{sampleOutput}
+
+\end{document}

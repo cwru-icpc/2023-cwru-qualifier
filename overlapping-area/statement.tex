@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{Overlapping Area}
+\author{Duc Huy Nguyen}
+\keywords{implementation}
+\comments{aaaaa}
+\difficulty{2} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+
+It is going to be midterm season soon! Prof. Connamacher is working his best to prepare exam sheets for the midterm. When he was walking to the exam room, Prof. Connamacher dropped the stack of papers on the floor. The exam papers are all around the place!
+
+Despite being in such an unlucky circumstance, the professor notices something interesting. The papers’ sides are either perpendicular or parallel to each other on the floor. Some papers overlap with each other. Prof. Connamacher wants to find the rectangle at which every exam paper overlaps, and return the area of the overlapping area. Please help prof Connamacher!
+
+
+\end{problemDescription}
+
+\begin{inputDescription}
+    The first line consists of an integer $n$ $(n \leq 10^5)$
+
+The next $n$ lines consist of two pairs of integers $x_{i1}, y_{i1}, x_{i2}, y_{i2}$, which denotes the down-left and upper-right corners of the exam paper $(-10^9 \leq x_{i1} < x_{i2} \leq 10^9, -10^9 \leq y_{i1} < y_{i2} \leq 10^9)$.
+
+\end{inputDescription}
+
+\begin{outputDescription}
+    A single integer denoting the area of the rectangle where every rectangle overlaps. If no such area exists, print $0$.
+\end{outputDescription}
+
+\begin{sampleInput}
+2
+1 1 3 3
+2 2 4 4
+----
+2
+1 1 3 3
+3 3 5 5
+\end{sampleInput}
+\begin{sampleOutput}
+1
+----
+0
+\end{sampleOutput}
+
+\end{document}

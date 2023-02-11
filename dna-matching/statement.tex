@@ -1,0 +1,36 @@
+\documentclass{article}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{DNA Matching}
+\author{Duc Huy Nguyen}
+\keywords{implementation}
+\comments{aaaaa}
+\difficulty{2} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+
+Case Western Reserve University has been known for the Bio-Chemistry Department. The school always tried to research in Bio-Chemistry using computer technology. In the following problem, we would like to program an RNA generation algorithm to help decrypt several organisms’ genome data.
+
+The genome data consists of a single string of length n that only contains 4 letters ATCG. These letters correspond to the 4 bases: adenine (A), cytosine (C), guanine (G), and thymine (T). With this string, we would like to create a new RNA string decoded from the genome data, which consists of 4 bases: adenine (A), uracil (U), cytosine (C), and guanine (G). The pairing of these bases will be of the following: A to U, T to A, C to G, and G to C. With the RNA decoded, the school can have a better understanding of the studied subject. Could you please help make this possible?
+
+\end{problemDescription}
+
+\begin{inputDescription}
+    A string of length $n$ $(n \leq 1000)$ which is the DNA data of the organism
+\end{inputDescription}
+
+\begin{outputDescription}
+    A string which is the RNA decoded from input genome data.
+\end{outputDescription}
+
+\begin{sampleInput}
+ATCG
+\end{sampleInput}
+\begin{sampleOutput}
+UAGC
+\end{sampleOutput}
+
+\end{document}

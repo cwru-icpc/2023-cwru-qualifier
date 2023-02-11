@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{Party Invitation}
+\author{Duc Huy Nguyen}
+\keywords{graph}
+\comments{aaaaa}
+\difficulty{4} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+
+    The party scene in Case Western Reserve is usually reviewed as being relatively more tamed compared to other schools nearby. This, however, is caused by the special properties of students’ relationships at Case.
+
+    You see, “The enemy of my enemy is my friend”. Given this phrase, we can see the connection between students at Case as follows: If Alice hates Bob and Bob hates Carol (the feelings of hatred are mutual, i.e. both people hate each other), then Alice and Carol are friends. 
+    
+    However, “Truly great friends are hard to find, difficult to leave, and impossible to forget”. Given this phrase, if Alice is a friend of Bob and Bob is a friend of Carol, then Alice and Carol are friends. You can see there might be toxic relationships that can arise (i.e. Alice hates Bob, Bob hates Carol and Carol hates Alice. Carol then hates Alice but is also still friends with her, which is messed up), but it is very interesting how Case’s students never have such relationships.
+
+    With enough research, Adam was able to map out every hatred relationship at CWRU. He would like to invite students to a special party event. He would like to not invite two people who hate each other, and if a student is invited, then all their friends must also be invited. Can you help him solve this problem?
+
+\end{problemDescription}
+
+\begin{inputDescription}
+
+    The first line consists of two integers $n$ and $m$ denoting the number of students and the number of mapped hatred relationships $(0 \leq n, m \leq 10^5)$. The students are enumerated from $1$ to $n$ for ease of calculation.
+
+    The next m lines consist of the hatred pairings $a, b$, $(1 \leq a, b \leq n)$.
+
+    It is guaranteed that these relationships do not result in two people hating each other but being friends with each other as stated.
+    
+
+\end{inputDescription}
+
+\begin{outputDescription}
+    A single number being the highest amount of students Adam can invite to the party
+\end{outputDescription}
+
+\begin{sampleInput}
+5 3
+4 5
+2 5
+2 1
+\end{sampleInput}
+\begin{sampleOutput}
+3
+\end{sampleOutput}
+
+\end{document}

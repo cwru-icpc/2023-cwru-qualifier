@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\usepackage{../icpc_problem} % or wherever this package is stored
+
+\title{Binary Walkway}
+\author{Duc Huy Nguyen}
+\keywords{???}
+\comments{vkl}
+\difficulty{5} % the difficulty should be a non-negative integer
+
+\begin{document}
+
+\begin{problemDescription}
+
+Alice has recently transferred to Case Western Reserve University and she was immediately told about our legendary Binary Walkway.
+
+As a PhD Math candidate, Alice is super interested in this construction. Fortunately, Case Western Reserve University has funding to build another binary walkway and is looking for a design idea from the CWRU community. Alice would love to submit her design, but there is a problem: there are some previous designs from other students which are all rejected.
+
+Therefore, in order to be eligible, her design needs to \textbf{be different from} those submitted designs. You are a super talented CS major and a close friend of hers. Please help Alice with an eligible idea!
+    
+
+\end{problemDescription}
+
+\begin{inputDescription}
+
+    The first line consists of an integer $n$ $(0 \leq n \leq 20)$.
+
+    The next line consists of $n$ binary strings of exact length $n$ denoting the rejected designs of binary walkways.
+    
+
+\end{inputDescription}
+
+\begin{outputDescription}
+A binary string of exact length . This string should be different from any provided string.
+\end{outputDescription}
+
+\begin{sampleInput}
+2
+10
+01
+----
+4
+0101
+0001
+0110
+0011
+\end{sampleInput}
+\begin{sampleOutput}
+00
+----
+1100
+\end{sampleOutput}
+
+\end{document}
